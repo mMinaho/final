@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>final</title>
+      <link rel='stylesheet' href="final.css">
+      <link rel='stylesheet' href="color2.css">
+      <script src="final.js"></script>
+      <script src="カレンダー.js"></script>
+      <link rel='stylesheet' href="カレンダー.css">
+    </head>
+<body>
+
+<header>
+  <div id='header'>
+    <div id="title" class='clearfix'>
+      <div class="sub-menu clearFix"></div>
+      <div id='title-logo'>
+        <h2 class="title">課題memorryシステム</h2>
+        <span class="title">kadaimemorrysistem</span>
+      </div>
+      <div id="globalmenu">
+        <ul class="list-nav00">
+       <li><a href="カレンダー.html">カレンダー</a></li>
+       <li><a href="課題一覧.html">課題一覧</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<p><div>
+  課題<br>
+  <label><input type="radio" name="type" value="homework" checked>宿題</label>
+  <label><input type="radio" name="type" value="report">レポート</label>
+  <label><input type="radio" name="type" value="test">テスト</label></br>
+</div></p>
+<p>授業名</p>
+ <p><input type="text" id="lecture" placeholder="授業名"></p>
+<p>内容</p>
+ <p><input type="text" id="content" placeholder="内容"></p>
+
+<input type="submit" value="登録する" onclick="register();">
+
+<p><div>
+  課題<br>
+  <label><input type="radio" name="type_display" value="homework" checked>宿題</label>
+  <label><input type="radio" name="type_display" value="report">レポート</label>
+  <label><input type="radio" name="type_display" value="test">テスト</label></br>
+</div></p>
+<p>授業名</p>
+ <p><input type="text" id="lecture" placeholder="授業名"></p>
+<p>内容</p>
+ <p><input type="text" id="content" placeholder="内容"></p>
+<button onclick="display()">表示する</button>
+
+<div class="calendar-wrapper">
+  <button id="btnPrev" type="button">Prev</button>
+	  <button id="btnNext" type="button">Next</button>
+  <div id="divCal"></div>
+</div>
+
+
+</body>

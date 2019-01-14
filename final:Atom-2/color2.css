@@ -1,0 +1,20 @@
+a:hover {
+    background: url(color.png) center center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+}
+
+li:hover {
+    background: url(color.png) center center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+}
+
+h3{
+  color: deepskyblue;
+  font-style: italic;1
+  font-size: 3000px

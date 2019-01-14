@@ -1,0 +1,90 @@
+body{
+  text-align: center;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  background-color: white;
+  font-family: "メイリオ", Meiryo,"ヒラギノ角ゴ Pro W3", "ＭＳゴシック", Osaka;
+}
+
+html, div {
+  padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+#title {
+  width: 1033px;
+  height: 262px;
+  margin: 0 auto;
+}
+
+#header {
+width: 100%;
+height: 230px;
+background-image: url(bg-header.gif);
+clear: both;
+}
+
+.clearFix {
+display: block;
+}
+
+.sub-menu {
+width: 510px;
+height: 55px;
+clear: both;
+margin: 0 0 0 470px;
+background: url(/common/images/sub-menu-2014.gif) no-repeat;
+}
+h2 {
+margin-bottom: 0px;
+}
+.title {
+  color: white;
+  font-family: "MS明朝";
+}
+
+.list-nav00{
+  width:980px;
+  margin:0 auto;
+}
+.list-nav00:after {//フロート解除用クリアフィックス
+  content: "";
+  clear: both;
+  display: block;
+}
+.list-nav00 li{
+  float:left;
+  width:140px; //ナビの幅980px ÷ ナビの数 7
+}
+.list-nav00 a{
+  display:block;
+  line-height:50px;
+  height:50px;
+  text-align:center;
+  font-size: 10pt;
+  background:#003366;
+  color:#fff;
+  border-right:1px solid white;
+}
+.list-nav00 li:first-child a{
+  border-left:1px solid white;
+}
+ul {
+  list-style: none;
+}
+
+#globalmenu {
+position: relative;
+width: 360px;
+margin: 32px auto;
+background-image: url(/common/images/main-menu-2014.gif);
+background-repeat: repeat-x;
+padding: 0;
+text-align: left;
+height: 50px;
+}
+#title-logo {
+width: 500px;
+height: 65px;
+clear: both;
+margin: 28px auto 0 auto;
+}
