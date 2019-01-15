@@ -25,10 +25,11 @@ function  getSelectedType(type){
   return type_selected;
 }
 
-function createAssignment(lecture,content){
+function createAssignment(lecture,content,deadline){
   var assignment = {
     "lecture":lecture,
-    "content":content
+    "content":content,
+    "deadline":deadline
   };
   return assignment;
 }
@@ -44,8 +45,9 @@ function register(){
 
  var lecture = document.getElementById("lecture").value;
  var content = document.getElementById("content").value;
+ var content = document.getElementById("deadline").value;
 
-var assignment = createAssignment(lecture,content);
+ var assignment = createAssignment(lecture,content,deadline);
 
 saveAssignment(type_selected,assignment);
 }
@@ -54,7 +56,7 @@ function showAssignments(assignments){
   var result = "";
 
   for (var i =0; i < assignments.length; i++){
-    result = result + "," + JSON.parse(assignments[i])["content"];
+    result = result + "," + JSON.parse(assignments[i])["lecture"] + JSON.parse(assignments[i])["content"] + JSON.parse(assignments[i])["deadline"];
   }
   alert(result);
 }

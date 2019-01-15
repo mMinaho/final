@@ -40,12 +40,14 @@
  <p><input type="text" id="lecture" placeholder="授業名"></p>
 <p>内容</p>
  <p><input type="text" id="content" placeholder="内容"></p>
-
+ <p>期限</p>
+  <p><input type="text" id="deadline" placeholder="期限"></p>
 <input type="submit" value="登録する" onclick="register();">
 
 <p><div>
   課題<br>
-  <label><input type="radio" name="type_display" value="homework" checked>宿題</label>
+  <label><input type="radio" name="type_display" value="homework" checked>全て</label>
+  <label><input type="radio" name="type_display" value="homework" >宿題</label>
   <label><input type="radio" name="type_display" value="report">レポート</label>
   <label><input type="radio" name="type_display" value="test">テスト</label></br>
 </div></p>
@@ -53,6 +55,8 @@
  <p><input type="text" id="lecture" placeholder="授業名"></p>
 <p>内容</p>
  <p><input type="text" id="content" placeholder="内容"></p>
+
+
 <button onclick="display()">表示する</button>
 
 <div class="calendar-wrapper">
